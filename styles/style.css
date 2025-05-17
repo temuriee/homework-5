@@ -174,16 +174,40 @@ body {
 .menu {
   display: none;
 }
+.burgerLogo {
+  width: 24px;
+  height: 24px;
+}
 @font-face {
   font-family: "Deca";
-  src: url(//assets/fonts/LexendDeca-Medium.ttf);
+  src: url(//assets/fonts/LexendDeca-Regular.ttf);
 }
 
-@media (max-width: 568px) {
+@media (max-width: 568px) and (min-width: 321px) {
   .nav-container {
     display: none;
   }
   .menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container {
+    max-width: 508px;
+    margin: 30px auto;
+  }
+}
+@media (max-width: 320px) {
+  .nav-container {
+    display: none;
+  }
+  .main-container {
+    max-width: 260px;
+    margin: 30px auto;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
